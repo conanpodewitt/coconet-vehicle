@@ -1,0 +1,823 @@
+{
+  "tag": "Main",
+  "contents": [
+    {
+      "tag": "DefFunction",
+      "contents": [
+        {
+          "tag": "Provenance",
+          "contents": [
+            34,
+            1,
+            34,
+            5
+          ]
+        },
+        "safe",
+        {
+          "tag": "Pi",
+          "contents": [
+            {
+              "tag": "Pi",
+              "contents": [
+                {
+                  "tag": "TensorType",
+                  "contents": {
+                    "tag": "RatType"
+                  }
+                },
+                {
+                  "tag": "TensorType",
+                  "contents": {
+                    "tag": "RatType"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "TensorType",
+              "contents": {
+                "tag": "RatType"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Lam",
+          "contents": [
+            {
+              "tag": "Binder",
+              "contents": [
+                {
+                  "tag": "Provenance",
+                  "contents": [
+                    34,
+                    1,
+                    34,
+                    5
+                  ]
+                },
+                "controller",
+                {
+                  "tag": "Pi",
+                  "contents": [
+                    {
+                      "tag": "TensorType",
+                      "contents": {
+                        "tag": "RatType"
+                      }
+                    },
+                    {
+                      "tag": "TensorType",
+                      "contents": {
+                        "tag": "RatType"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "DivRatTensor",
+              "contents": [
+                {
+                  "tag": "ConstTensor",
+                  "contents": [
+                    {
+                      "tag": "RatLiteral",
+                      "contents": {
+                        "numerator": 1,
+                        "denominator": 1
+                      }
+                    },
+                    {
+                      "tag": "DimensionCons",
+                      "contents": [
+                        {
+                          "tag": "Dimension",
+                          "contents": 1
+                        },
+                        {
+                          "tag": "DimensionNil"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "SearchRatTensor",
+                  "contents": [
+                    {
+                      "tag": "Lam",
+                      "contents": [
+                        {
+                          "tag": "Binder",
+                          "contents": [
+                            {
+                              "tag": "Provenance",
+                              "contents": [
+                                0,
+                                0,
+                                0,
+                                0
+                              ]
+                            },
+                            "xs",
+                            {
+                              "tag": "TensorType",
+                              "contents": {
+                                "tag": "RatType"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "ReduceMulRatTensor",
+                          "contents": {
+                            "tag": "Var",
+                            "contents": [
+                              "xs",
+                              []
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "RatLiteral",
+                      "contents": {
+                        "numerator": 0,
+                        "denominator": 1
+                      }
+                    },
+                    {
+                      "tag": "RatLiteral",
+                      "contents": {
+                        "numerator": 0,
+                        "denominator": 1
+                      }
+                    },
+                    {
+                      "tag": "Lam",
+                      "contents": [
+                        {
+                          "tag": "Binder",
+                          "contents": [
+                            {
+                              "tag": "Provenance",
+                              "contents": [
+                                35,
+                                15,
+                                35,
+                                16
+                              ]
+                            },
+                            "x",
+                            {
+                              "tag": "TensorType",
+                              "contents": {
+                                "tag": "RatType"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "DivRatTensor",
+                          "contents": [
+                            {
+                              "tag": "ConstTensor",
+                              "contents": [
+                                {
+                                  "tag": "RatLiteral",
+                                  "contents": {
+                                    "numerator": 1,
+                                    "denominator": 1
+                                  }
+                                },
+                                {
+                                  "tag": "DimensionCons",
+                                  "contents": [
+                                    {
+                                      "tag": "Dimension",
+                                      "contents": 1
+                                    },
+                                    {
+                                      "tag": "DimensionNil"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "MulRatTensor",
+                              "contents": [
+                                {
+                                  "tag": "DivRatTensor",
+                                  "contents": [
+                                    {
+                                      "tag": "ConstTensor",
+                                      "contents": [
+                                        {
+                                          "tag": "RatLiteral",
+                                          "contents": {
+                                            "numerator": 1,
+                                            "denominator": 1
+                                          }
+                                        },
+                                        {
+                                          "tag": "DimensionCons",
+                                          "contents": [
+                                            {
+                                              "tag": "Dimension",
+                                              "contents": 1
+                                            },
+                                            {
+                                              "tag": "DimensionNil"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "ReduceAddRatTensor",
+                                      "contents": {
+                                        "tag": "AddRatTensor",
+                                        "contents": [
+                                          {
+                                            "tag": "MaxRatTensor",
+                                            "contents": [
+                                              {
+                                                "tag": "ConstTensor",
+                                                "contents": [
+                                                  {
+                                                    "tag": "RatLiteral",
+                                                    "contents": {
+                                                      "numerator": 0,
+                                                      "denominator": 1
+                                                    }
+                                                  },
+                                                  {
+                                                    "tag": "DimensionCons",
+                                                    "contents": [
+                                                      {
+                                                        "tag": "Dimension",
+                                                        "contents": 1
+                                                      },
+                                                      {
+                                                        "tag": "DimensionNil"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "tag": "SubRatTensor",
+                                                "contents": [
+                                                  {
+                                                    "tag": "ConstTensor",
+                                                    "contents": [
+                                                      {
+                                                        "tag": "RatLiteral",
+                                                        "contents": {
+                                                          "numerator": -13,
+                                                          "denominator": 4
+                                                        }
+                                                      },
+                                                      {
+                                                        "tag": "DimensionCons",
+                                                        "contents": [
+                                                          {
+                                                            "tag": "Dimension",
+                                                            "contents": 1
+                                                          },
+                                                          {
+                                                            "tag": "DimensionNil"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "tag": "Var",
+                                                    "contents": [
+                                                      "x",
+                                                      []
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "tag": "MaxRatTensor",
+                                            "contents": [
+                                              {
+                                                "tag": "ConstTensor",
+                                                "contents": [
+                                                  {
+                                                    "tag": "RatLiteral",
+                                                    "contents": {
+                                                      "numerator": 0,
+                                                      "denominator": 1
+                                                    }
+                                                  },
+                                                  {
+                                                    "tag": "DimensionCons",
+                                                    "contents": [
+                                                      {
+                                                        "tag": "Dimension",
+                                                        "contents": 1
+                                                      },
+                                                      {
+                                                        "tag": "DimensionNil"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "tag": "SubRatTensor",
+                                                "contents": [
+                                                  {
+                                                    "tag": "Var",
+                                                    "contents": [
+                                                      "x",
+                                                      []
+                                                    ]
+                                                  },
+                                                  {
+                                                    "tag": "ConstTensor",
+                                                    "contents": [
+                                                      {
+                                                        "tag": "RatLiteral",
+                                                        "contents": {
+                                                          "numerator": 13,
+                                                          "denominator": 4
+                                                        }
+                                                      },
+                                                      {
+                                                        "tag": "DimensionCons",
+                                                        "contents": [
+                                                          {
+                                                            "tag": "Dimension",
+                                                            "contents": 1
+                                                          },
+                                                          {
+                                                            "tag": "DimensionNil"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "AddRatTensor",
+                                  "contents": [
+                                    {
+                                      "tag": "MaxRatTensor",
+                                      "contents": [
+                                        {
+                                          "tag": "ConstTensor",
+                                          "contents": [
+                                            {
+                                              "tag": "RatLiteral",
+                                              "contents": {
+                                                "numerator": 0,
+                                                "denominator": 1
+                                              }
+                                            },
+                                            {
+                                              "tag": "DimensionCons",
+                                              "contents": [
+                                                {
+                                                  "tag": "Dimension",
+                                                  "contents": 1
+                                                },
+                                                {
+                                                  "tag": "DimensionNil"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tag": "SubRatTensor",
+                                          "contents": [
+                                            {
+                                              "tag": "ConstTensor",
+                                              "contents": [
+                                                {
+                                                  "tag": "RatLiteral",
+                                                  "contents": {
+                                                    "numerator": -5,
+                                                    "denominator": 4
+                                                  }
+                                                },
+                                                {
+                                                  "tag": "DimensionCons",
+                                                  "contents": [
+                                                    {
+                                                      "tag": "Dimension",
+                                                      "contents": 1
+                                                    },
+                                                    {
+                                                      "tag": "DimensionNil"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "tag": "SubRatTensor",
+                                              "contents": [
+                                                {
+                                                  "tag": "AddRatTensor",
+                                                  "contents": [
+                                                    {
+                                                      "tag": "DimensionLookup",
+                                                      "contents": [
+                                                        {
+                                                          "tag": "Var",
+                                                          "contents": [
+                                                            "controller",
+                                                            [
+                                                              {
+                                                                "tag": "DivRatTensor",
+                                                                "contents": [
+                                                                  {
+                                                                    "tag": "AddRatTensor",
+                                                                    "contents": [
+                                                                      {
+                                                                        "tag": "Var",
+                                                                        "contents": [
+                                                                          "x",
+                                                                          []
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "tag": "ConstTensor",
+                                                                        "contents": [
+                                                                          {
+                                                                            "tag": "RatLiteral",
+                                                                            "contents": {
+                                                                              "numerator": 4,
+                                                                              "denominator": 1
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "tag": "DimensionCons",
+                                                                            "contents": [
+                                                                              {
+                                                                                "tag": "Dimension",
+                                                                                "contents": 1
+                                                                              },
+                                                                              {
+                                                                                "tag": "DimensionNil"
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "tag": "ConstTensor",
+                                                                    "contents": [
+                                                                      {
+                                                                        "tag": "RatLiteral",
+                                                                        "contents": {
+                                                                          "numerator": 8,
+                                                                          "denominator": 1
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "tag": "DimensionCons",
+                                                                        "contents": [
+                                                                          {
+                                                                            "tag": "Dimension",
+                                                                            "contents": 1
+                                                                          },
+                                                                          {
+                                                                            "tag": "DimensionNil"
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          ]
+                                                        },
+                                                        {
+                                                          "tag": "DimensionIndex",
+                                                          "contents": 0
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "tag": "MulRatTensor",
+                                                      "contents": [
+                                                        {
+                                                          "tag": "ConstTensor",
+                                                          "contents": [
+                                                            {
+                                                              "tag": "RatLiteral",
+                                                              "contents": {
+                                                                "numerator": 2,
+                                                                "denominator": 1
+                                                              }
+                                                            },
+                                                            {
+                                                              "tag": "DimensionCons",
+                                                              "contents": [
+                                                                {
+                                                                  "tag": "Dimension",
+                                                                  "contents": 1
+                                                                },
+                                                                {
+                                                                  "tag": "DimensionNil"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "tag": "DimensionLookup",
+                                                          "contents": [
+                                                            {
+                                                              "tag": "Var",
+                                                              "contents": [
+                                                                "x",
+                                                                []
+                                                              ]
+                                                            },
+                                                            {
+                                                              "tag": "DimensionIndex",
+                                                              "contents": 0
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "tag": "DimensionLookup",
+                                                  "contents": [
+                                                    {
+                                                      "tag": "Var",
+                                                      "contents": [
+                                                        "x",
+                                                        []
+                                                      ]
+                                                    },
+                                                    {
+                                                      "tag": "DimensionIndex",
+                                                      "contents": 1
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "MaxRatTensor",
+                                      "contents": [
+                                        {
+                                          "tag": "ConstTensor",
+                                          "contents": [
+                                            {
+                                              "tag": "RatLiteral",
+                                              "contents": {
+                                                "numerator": 0,
+                                                "denominator": 1
+                                              }
+                                            },
+                                            {
+                                              "tag": "DimensionCons",
+                                              "contents": [
+                                                {
+                                                  "tag": "Dimension",
+                                                  "contents": 1
+                                                },
+                                                {
+                                                  "tag": "DimensionNil"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tag": "SubRatTensor",
+                                          "contents": [
+                                            {
+                                              "tag": "SubRatTensor",
+                                              "contents": [
+                                                {
+                                                  "tag": "AddRatTensor",
+                                                  "contents": [
+                                                    {
+                                                      "tag": "DimensionLookup",
+                                                      "contents": [
+                                                        {
+                                                          "tag": "Var",
+                                                          "contents": [
+                                                            "controller",
+                                                            [
+                                                              {
+                                                                "tag": "DivRatTensor",
+                                                                "contents": [
+                                                                  {
+                                                                    "tag": "AddRatTensor",
+                                                                    "contents": [
+                                                                      {
+                                                                        "tag": "Var",
+                                                                        "contents": [
+                                                                          "x",
+                                                                          []
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "tag": "ConstTensor",
+                                                                        "contents": [
+                                                                          {
+                                                                            "tag": "RatLiteral",
+                                                                            "contents": {
+                                                                              "numerator": 4,
+                                                                              "denominator": 1
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "tag": "DimensionCons",
+                                                                            "contents": [
+                                                                              {
+                                                                                "tag": "Dimension",
+                                                                                "contents": 1
+                                                                              },
+                                                                              {
+                                                                                "tag": "DimensionNil"
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "tag": "ConstTensor",
+                                                                    "contents": [
+                                                                      {
+                                                                        "tag": "RatLiteral",
+                                                                        "contents": {
+                                                                          "numerator": 8,
+                                                                          "denominator": 1
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "tag": "DimensionCons",
+                                                                        "contents": [
+                                                                          {
+                                                                            "tag": "Dimension",
+                                                                            "contents": 1
+                                                                          },
+                                                                          {
+                                                                            "tag": "DimensionNil"
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          ]
+                                                        },
+                                                        {
+                                                          "tag": "DimensionIndex",
+                                                          "contents": 0
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "tag": "MulRatTensor",
+                                                      "contents": [
+                                                        {
+                                                          "tag": "ConstTensor",
+                                                          "contents": [
+                                                            {
+                                                              "tag": "RatLiteral",
+                                                              "contents": {
+                                                                "numerator": 2,
+                                                                "denominator": 1
+                                                              }
+                                                            },
+                                                            {
+                                                              "tag": "DimensionCons",
+                                                              "contents": [
+                                                                {
+                                                                  "tag": "Dimension",
+                                                                  "contents": 1
+                                                                },
+                                                                {
+                                                                  "tag": "DimensionNil"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "tag": "DimensionLookup",
+                                                          "contents": [
+                                                            {
+                                                              "tag": "Var",
+                                                              "contents": [
+                                                                "x",
+                                                                []
+                                                              ]
+                                                            },
+                                                            {
+                                                              "tag": "DimensionIndex",
+                                                              "contents": 0
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "tag": "DimensionLookup",
+                                                  "contents": [
+                                                    {
+                                                      "tag": "Var",
+                                                      "contents": [
+                                                        "x",
+                                                        []
+                                                      ]
+                                                    },
+                                                    {
+                                                      "tag": "DimensionIndex",
+                                                      "contents": 1
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "tag": "ConstTensor",
+                                              "contents": [
+                                                {
+                                                  "tag": "RatLiteral",
+                                                  "contents": {
+                                                    "numerator": 5,
+                                                    "denominator": 4
+                                                  }
+                                                },
+                                                {
+                                                  "tag": "DimensionCons",
+                                                  "contents": [
+                                                    {
+                                                      "tag": "Dimension",
+                                                      "contents": 1
+                                                    },
+                                                    {
+                                                      "tag": "DimensionNil"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
