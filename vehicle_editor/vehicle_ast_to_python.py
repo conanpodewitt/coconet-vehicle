@@ -51,6 +51,7 @@ def extract_networks_from_ast(ast_data: Dict[str, Any]) -> List[Dict[str, Any]]:
 def extract_network_from_function(function_node: Dict[str, Any]) -> Optional[Dict[str, Any]]:
 	"""Extract network information from a function definition node."""
 	function_contents = function_node.get("contents", [])
+
 	if len(function_contents) < 4:
 		return None
 	
@@ -58,21 +59,16 @@ def extract_network_from_function(function_node: Dict[str, Any]) -> Optional[Dic
 	network_info = {}
 	
 	# Extract function node
-	function_name_index = 0
-	if function_contents[0].get("tag") == "Provenance":
-		function_name_index += 1
-	
-	function_name = function_contents[function_name_index]
+	function_name = function_contents[1]
 	network_info["function_name"] = function_name
 	
 	# Extract lambda node
-	lambda_node_index = function_name_index + 2
+	lambda_node_index = 3
 	if lambda_node_index >= len(function_contents):
 		return None
 	lambda_node = function_contents[lambda_node_index]
 	
 	extract_network_from_lambda(lambda_node, network_info)
-
 	return network_info
 
 
@@ -101,14 +97,9 @@ def extract_network_from_binder(binder_node: Dict[str, Any], network_info: Dict[
 		return None
 	
 	# Extract network name and signature
-	param_name_index = 0
-	if binder_contents[0].get("tag") == "Provenance":
-		param_name_index += 1
-	network_name = binder_contents[param_name_index]
-
+	network_name = binder_contents[1]
 	network_info["name"] = network_name
-
-	contents = binder_contents[param_name_index + 1]["contents"]
+	contents = binder_contents[2]["contents"]
 	network_info["signature"] = {"input": contents[0], "output": contents[1]}
 
 
