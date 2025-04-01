@@ -17,11 +17,10 @@ from PyQt6.QtWidgets import QMainWindow
 import coconet.resources.styling.dimension as dim
 from coconet import APP_NAME, RES_DIR
 from coconet.view.ui.main_widget import CoCoNetWidget
-
+from coconet.view.ui.vehicle_widget import VehicleWidget
 
 def open_guide():
     webbrowser.open('https://nevertools.github.io/coconet_guide.html')
-
 
 class CoCoNetWindow(QMainWindow):
     """
@@ -29,25 +28,7 @@ class CoCoNetWindow(QMainWindow):
     a unique CoCoNetWidget object. The menu bar is made of four submenus
     ('File', 'Edit', 'View', 'Help') and each submenu has its own set of
     actions.
-
-    Attributes
-    ----------
-    menu_bar : QMenuBar
-        Qt menubar initializer
-    editor_widget : CoCoNetWidget
-        Main widget of the application displayed in the window
-
-    Methods
-    ----------
-    init_ui()
-        Procedure to set up the UI parameters
-    create_menu()
-        Procedure to create the QActions and the submenus
-    load_inspector()
-        Procedure to create the QDockWidget for block inspection
-
     """
-
     def __init__(self):
         super().__init__()
 
@@ -61,11 +42,13 @@ class CoCoNetWindow(QMainWindow):
 
         self.init_ui()
 
+        # Initialize the Vehicle Widget attribute to None
+        self.vehicle_widget = None
+
     def init_ui(self):
         """
         This method initializes the QMainWindow settings such as the title, the icon and the geometry.
-        It sets the default window size to 1024x768 and moves the window to the scree center
-
+        It sets the default window size to 1024x768 and moves the window to the screen center.
         """
         self.setWindowTitle(APP_NAME)
         self.setWindowIcon(QIcon(RES_DIR + '/icons/logo_square.png'))
@@ -85,8 +68,7 @@ class CoCoNetWindow(QMainWindow):
     def create_menu(self):
         """
         This method builds the application menu reading from a JSON file. Each action is linked
-        manually to functions contained in editor_widget
-
+        manually to functions contained in editor_widget.
         """
         self.setContextMenuPolicy(Qt.ContextMenuPolicy.PreventContextMenu)
         menu_actions = dict()  # Dictionary containing the QAction objects linked to the menu items
@@ -131,6 +113,21 @@ class CoCoNetWindow(QMainWindow):
 
             # HELP
             menu_actions['Help:Open guide'].triggered.connect(open_guide)
+
+            # Add a menu item for the Vehicle verifier tool.
+            tools_menu = self.menu_bar.addMenu('&Tools')
+            vehicle_verifier_action = QAction("Vehicle verifier", self)
+            vehicle_verifier_action.triggered.connect(self.launch_vehicle_verifier)
+            tools_menu.addAction(vehicle_verifier_action)
+
+    def launch_vehicle_verifier(self):
+        """
+        Launch the persistent Vehicle Verifier window.
+        """
+        if self.vehicle_widget is None:
+            self.vehicle_widget = VehicleWidget(self)
+        self.vehicle_widget.show()
+        self.vehicle_widget.raise_()
 
     def quit(self):
         self.editor_widget.save_prompt_dialog()

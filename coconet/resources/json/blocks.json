@@ -711,34 +711,5 @@
       },
       "description": "Insert single-dimensional entries to the shape of an input tensor (data). Takes one required input axes - which contains a list of dimension indices and this operator will insert a dimension of value 1 into the corresponding index of the output tensor (expanded)."
     }
-  },
-  "Additional tools": {
-    "Vehicle verifier": {
-      "name": "",
-      "id": "",
-      "input": {
-        "data": {
-          "type": "",
-          "description": ""
-        }
-      },
-      "parameters": {
-        "p": {
-          "type": "",
-          "description": "",
-          "object": "",
-          "required": "",
-          "default": "",
-          "editable": ""
-        }
-      },
-      "output": {
-        "output": {
-          "type": "",
-          "description": ""
-        }
-      },
-      "description": ""
-    }
   }
 }
