@@ -21,5 +21,10 @@ setuptools.setup(
         "Operating System:: OS Independent",
     ],
     python_requires='>=3.9',
-    install_requires=['pynever', 'PyQt6']
+    install_requires=['pynever', 'PyQt6'],
+    entry_points={
+        'console_scripts': [
+            'coconet=coconet:main',
+        ],
+    }
 )

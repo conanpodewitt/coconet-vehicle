@@ -7,10 +7,8 @@ from PyQt6.QtWidgets import QApplication
 from coconet.main_window import CoCoNetWindow
 from scripts import cli
 
-if __name__ == "__main__":
-
+def main():
     # GUI mode
-
     if len(sys.argv) == 1:
         APP_ID = u'org.neuralverification.coconet.2.0'
 
@@ -25,7 +23,6 @@ if __name__ == "__main__":
         sys.exit(app.exec())
 
     # CLI mode
-
     elif len(sys.argv) == 2 and sys.argv[1] == "-h":
         cli.show_help()
     elif len(sys.argv) == 3 and sys.argv[1] == "-check":
@@ -34,3 +31,6 @@ if __name__ == "__main__":
         cli.convert_to_onnx(sys.argv[2])
     else:
         cli.show_help()
+
+if __name__ == "__main__":
+    main()
