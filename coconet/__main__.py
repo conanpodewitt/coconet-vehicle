@@ -15,7 +15,7 @@ def main():
         # Set taskbar icon on Windows
         if platform.system() == 'Windows':
             ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(APP_ID)
-            sys.argv += ['-platform', 'windows:darkmode=2']
+            sys.argv += ['-platform', 'windows:darkmode=2'] # TODO remove with styling
 
         app = QApplication(sys.argv)
         window = CoCoNetWindow()

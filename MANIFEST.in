@@ -1,11 +1,10 @@
-# Include the top-level documentation and license files.
+# Include the top-level documentation and license files
 include README.md
 include LICENSE.txt
 include CONTRIBUTING.md
 
-# Include all files under the coconet/resources directory.
+# Include all files under the coconet/resources directory
 recursive-include coconet/resources *
 
-# If your vehicle_editor files are needed by the installed package,
-# include any JSON (or other) files from that directory.
+# Stuff for Vehicle
 recursive-include vehicle_editor *.json
