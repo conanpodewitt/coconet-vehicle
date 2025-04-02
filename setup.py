@@ -24,7 +24,7 @@ setuptools.setup(
     install_requires=['pynever', 'PyQt6'],
     entry_points={
         'console_scripts': [
-            'coconet=coconet:main',
+            'coconet=coconet.__main__:main',
         ],
     }
 )
