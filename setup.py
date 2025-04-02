@@ -26,5 +26,6 @@ setuptools.setup(
         'console_scripts': [
             'coconet=coconet.__main__:main',
         ],
-    }
+    },
+    include_package_data=True,
 )
