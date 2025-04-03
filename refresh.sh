@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Temporary development script to refresh CoCoNet installation
+# Use this after making changes to the CoCoNet repository
 
 # Uninstall existing CoCoNet installation
 pip uninstall coconet -y
